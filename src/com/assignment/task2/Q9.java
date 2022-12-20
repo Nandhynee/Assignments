@@ -18,7 +18,7 @@ public class Q9 {
         }
         else if(eunits>60 && eunits<=90)
         {
-            bill = 60*0.30 +(eunits-60)*0.75;
+            bill = (0.75 * eunits);
             surcharge = bill * 20 / 100;
             bill = bill + surcharge;
             System.out.println("your final bill is " + bill);
@@ -26,14 +26,14 @@ public class Q9 {
         }
         else if(eunits>90 && eunits <=120)
         {
-            bill = 60*0.30 +30*0.75+(eunits-90)*1.10;
+            bill = (1.10 * eunits);
             surcharge = bill * 20 / 100;
             bill = bill + surcharge;
             System.out.println("your final bill is " + bill);
         }
-        else if(eunits>120)
+        else if(eunits>=300)
         {
-            bill = 60*0.30 +30*0.75+30*1.10+(eunits-120 )*1.10;
+            bill = (2.50 * eunits);
             surcharge = bill * 20 / 100;
             bill = bill + surcharge;
             System.out.println("your final bill is " + bill);

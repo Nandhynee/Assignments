@@ -1,6 +1,6 @@
-package com.assignment.task3;
+package com.assignment.practicequestions;
 
-public class Q7 {
+public class Starpattern {
     public static void main(String[] args) {
         int i, j, row = 5;
         for (i = 1; i <= row; i++) {
@@ -10,7 +10,8 @@ public class Q7 {
             for (j = 1; j <= i; j++) {
                 System.out.print("*");
             }
-            System.out.println();
+                System.out.println();
+            }
         }
     }
-}
+
